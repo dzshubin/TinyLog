@@ -31,3 +31,10 @@
 
 # 临时文件
 *.~
+
+# pycharm工程文件
+*.iml
+*.xml
+__*
+
+exec.py
