@@ -9,8 +9,8 @@ class ConsoleFilter(logging.Filter):
     的参数，决定是否将log输出在stderr或者stdout上。
     '''
 
-    def __init__(self, param=0):
-        self.param = param
+    def __init__(self, print2console=0):
+        self.flag = print2console
 
     def filter(self, record):
         '''过滤函数
@@ -22,7 +22,7 @@ class ConsoleFilter(logging.Filter):
         
         Returns: 返回是否进一步处理。True即进一步处理消息。
         '''
-        if self.param == 1:
+        if self.flag == 1:
             return True
         else:
             return False
