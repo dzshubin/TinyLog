@@ -8,7 +8,7 @@
 
     "filters": {
         "console_filter": {
-            "()": "tiny_log.ConsoleFilter",
+            "()": "tiny_logger.ConsoleFilter",
             "print2console": 1
         }
     },
