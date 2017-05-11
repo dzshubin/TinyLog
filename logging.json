@@ -2,7 +2,7 @@
     "version": 1,
     "formatters": {
         "common_format": {
-            "format": "%(asctime)s - %(pathname)s %(lineno)d - %(levelname)s - %(message)s"
+            "format": "%(asctime)s - %(pathname)s %(lineno)d - %(process)d - %(levelname)s - %(message)s"
         }
     },
 
