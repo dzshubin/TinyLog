@@ -19,16 +19,15 @@
             "filters": ["console_filter"],
             "formatter": "common_format"
         },
-        "log_file": {
-            "class": "logging.handlers.TimedRotatingFileHandler",
+        "log2file": {
+            "()": "tiny_logger.SafeFileHandler",
             "filename": "whatweb_log",
-            "when": "midnight",
             "level": "DEBUG",
             "formatter": "common_format"
         }
     },
     "root": {
         "level": "DEBUG",
-        "handlers": ["console", "log_file"]
+        "handlers": ["console", "log2file"]
     }
 }
